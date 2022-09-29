@@ -12,12 +12,18 @@ const Caption = () => {
   return (
     <Fragment>
       <div className='caption fc-black-600'>
-        <h3>Join the HelpAssian community</h3>
+        <h3>Join the <b>HelpAssian</b> community</h3>
         <div className='caption-item'>
           <div className='grid-icon'>
             <QuoteLogo/>
           </div>
           <div className='grid-cell'>Get unstuck — ask a question</div>
+        </div>
+        <div className='caption-item'>
+          <div className='grid-icon'>
+            <TrophyLogo/>
+          </div>
+          <div className='grid-cell'>Earn kudos, karma, reputation, badges and many more</div>
         </div>
         <div className='caption-item'>
           <div className='grid-icon'>
@@ -35,21 +41,9 @@ const Caption = () => {
             Save your favorite tags, filters, and jobs
           </div>
         </div>
-        <div className='caption-item'>
-          <div className='grid-icon'>
-            <TrophyLogo/>
-          </div>
-          <div className='grid-cell'>Earn reputation and badges</div>
-        </div>
         <div className='caption-item fc-black-600'>
           <div>
-            Use the power of Stack Overflow inside your organization.
-            <br />
-            Try a{' '}
-            <Link to='https://stackoverflow.com/teams?utm_source=so-owned&utm_medium=product&utm_campaign=public-sign-up&utm_content=teams'>
-              free trial of Stack Overflow for Teams
-            </Link>
-            .
+            <i>Use the power of <strong>"HelpAssian"</strong> and ease your life.</i>
           </div>
         </div>
       </div>
