@@ -42,7 +42,7 @@ const Header = ({auth: {isAuthenticated, loading, user}, logout}) => {
   const authTabs = (
     <div className='s-navigation'>
       <Link to='/' className='s-navigation--item is-selected'>
-        Questions
+        Home
       </Link>
       <Link to='/' className='s-navigation--item not-selected'>
         FAQ
@@ -53,7 +53,7 @@ const Header = ({auth: {isAuthenticated, loading, user}, logout}) => {
   const guestTabs = (
     <div className='s-navigation'>
       <Link to='/' className='s-navigation--item is-selected'>
-      Questions
+      Home
       </Link>
       <Link to='/' className='s-navigation--item not-selected'>
         Customers

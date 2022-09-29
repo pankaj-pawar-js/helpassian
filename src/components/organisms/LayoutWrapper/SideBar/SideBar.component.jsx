@@ -8,7 +8,7 @@ import './SideBar.styles.scss';
 const SideBar = () => (
   <div className='side-bar-container'>
     <div className='side-bar-tabs'>
-      <SideBarItem isHome={true} link='/' text='Home'/>
+      <SideBarItem isHome={true} link='/' text='Top Questions'/>
 
       <div className='public-tabs'>
         <p className='title fc-light'>PUBLIC</p>
