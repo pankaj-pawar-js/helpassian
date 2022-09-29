@@ -11,11 +11,11 @@ export const SideBarData = [
     text: 'Tags',
   },
   {
-    link: '/users',
-    text: 'Users',
+    link: '/channels',
+    text: 'Slack Channels',
   },
   // {
   //   link: '/jobs',
-  //   text: 'Jobs',
+  //   text: 'Favorites',
   // }
 ]

@@ -56,10 +56,10 @@ const Header = ({auth: {isAuthenticated, loading, user}, logout}) => {
       Home
       </Link>
       <Link to='/' className='s-navigation--item not-selected'>
-        Customers
+      Favorites
       </Link>
       <Link to='/' className='s-navigation--item not-selected'>
-        Use cases
+        People
       </Link>
       <Link to='/' className='s-navigation--item not-selected'>
         FAQ
