@@ -22,7 +22,7 @@ import NotFound from './modules/NotFound/NotFound.component';
 
 import { BaseRoute, LayoutRoute } from './Router';
 
-import './App.css';
+import './App.scss';
 
 if (localStorage.token) {
   setAuthToken(localStorage.token);

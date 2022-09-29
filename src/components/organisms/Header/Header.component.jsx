@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 import { logout } from '../../../redux/auth/auth.actions';
 
 import {ReactComponent as Search} from '../../../assets/Search.svg';
-import {ReactComponent as Logo} from '../../../assets/LogoMd.svg';
+import {ReactComponent as Logo} from '../../../assets/Atlassian-logo.svg';
 import {ReactComponent as SmallLogo} from '../../../assets/LogoGlyphMd.svg';
 import Spinner from '../../molecules/Spinner/Spinner.component';
 import LinkButton from '../../molecules/LinkButton/LinkButton.component';
@@ -42,7 +42,10 @@ const Header = ({auth: {isAuthenticated, loading, user}, logout}) => {
   const authTabs = (
     <div className='s-navigation'>
       <Link to='/' className='s-navigation--item is-selected'>
-        Products
+        Questions
+      </Link>
+      <Link to='/' className='s-navigation--item not-selected'>
+        FAQ
       </Link>
     </div>
   );
@@ -50,13 +53,16 @@ const Header = ({auth: {isAuthenticated, loading, user}, logout}) => {
   const guestTabs = (
     <div className='s-navigation'>
       <Link to='/' className='s-navigation--item is-selected'>
-        Products
+      Questions
       </Link>
       <Link to='/' className='s-navigation--item not-selected'>
         Customers
       </Link>
       <Link to='/' className='s-navigation--item not-selected'>
         Use cases
+      </Link>
+      <Link to='/' className='s-navigation--item not-selected'>
+        FAQ
       </Link>
     </div>
   );
@@ -102,6 +108,7 @@ const Header = ({auth: {isAuthenticated, loading, user}, logout}) => {
             <Logo className='full-logo' />
             <SmallLogo className='glyph-logo' />
           </Link>
+          <label>HelpAssian</label>
           {!loading && (
             <Fragment>{isAuthenticated ? authTabs : guestTabs}</Fragment>
           )}

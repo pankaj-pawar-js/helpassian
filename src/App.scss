@@ -1,0 +1,199 @@
+:root {
+    --yellow-200: #675c37;
+    --yellow-050: #464236;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system,BlinkMacSystemFont,'Segoe UI','Roboto','Oxygen','Ubuntu','Fira Sans','Droid Sans','Helvetica Neue',sans-serif !important;
+    transition: all 300ms ease-in-out;
+}
+
+body {
+    background-color: #2d2d2d !important;
+    padding-top: 0 !important;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+button {
+    margin: 3px;
+}
+
+#content {
+    background: #ffffff;
+    // border-radius: 5px;
+    margin: 0;
+
+    #mainbar {
+        padding: 20px 10px;
+    }
+
+    .questions-page .questions {
+        border: none;
+    }
+
+    .questions-tabs{
+        .s-btn-group .s-btn.is-selected {
+            color: white;
+        }
+    }
+
+    .posts {
+        padding: 12px 8px 12px 8px;
+        width: 100%;
+        box-sizing: border-box;
+        display: flex;
+        border: 1px solid #dce1e9;
+        margin: 12px;
+        border-radius: 4px;
+        background-color: #F4F5F7;
+    }
+
+    .Mui-selected {
+        color: #fff !important;
+        background-color: #0c66e4 !important;
+    }
+
+    .css-vrym0s-MuiButtonBase-root-MuiPaginationItem-root {
+        color: #0c66e4;
+        background-color: aliceblue;
+        border-color: #0c66e4;
+    }
+}
+
+body .side-bar-container {
+    box-shadow: 0 0 0 rgba(12,13,14,0.05);
+    background-color: #ffffff;
+    min-width: 225px;
+    border-right: 2px solid #EBECF0;
+
+    .side-bar-tabs {
+        .nav-link {
+            text-decoration: none;
+            color: black;
+        }
+
+        .active li {
+            font-weight: bold;
+            background: #e9f2ff;
+            color: #000;
+            border-left: 4px solid #0c66e4;
+            border-right: none;
+            width: 100%;
+            height: 32px;
+
+            .menu-list-btn {
+                padding-left: 4px;
+            }
+        }
+
+        .icon-link li {
+            width: 100%;
+        }
+
+        .active .menu-list-text > span {
+            font-weight: normal;
+            color: #0c66e4;
+        }
+    }
+
+    .side-bar-tabs {
+        float: none;
+        margin-top: 25px;
+    }
+
+}
+
+
+body .navbar {
+    background-color: #ffffff;
+    border-top: none;
+    height: 65px;
+
+    .header-brand-div{
+        label {
+            margin: 0px 15px 0 -125px;
+            font-size: 19px;
+        }
+    }
+
+    .navbar-brand {
+        margin-left: 0px;
+        margin-top: 5px;
+
+        &:hover{
+            background-color: transparent;
+        }
+    }
+    
+    .navbar-items {
+        background-color: #ffffff;
+        flex-direction: column;
+        display: flex;
+        height: 100%;
+        margin: auto 0;
+    }
+    
+    .navbar-items:hover {
+        background-color: #0052CC;
+    }
+    
+    .navbar-items:visited {
+        border: 10px solid orangered;
+    }
+    
+    .s-navigation {
+        font-size: 16px;
+        height: 100%;
+        // border-bottom: 3px solid #0052CC;
+
+        .s-navigation--item{
+            margin: 2px 0 0 0;
+            border-radius: 0;
+            &:hover{
+                background: aliceblue !important;
+                color: black !important;
+                border-radius: 4px;
+            }
+        }
+
+        .s-navigation--item.is-selected{
+            background: white;
+            color: black;
+            border-bottom: 3px solid #0052CC;
+        }
+    }
+
+    #search {
+        display: flex;
+        justify-content: end;
+
+        .ps-relative {
+            height: 32px;
+            margin-top: 4px;
+        }
+    }
+}
+
+#sidebar {
+    & > div.s-sidebarwidget {
+        border-color: aliceblue;
+        background-color: aliceblue;
+        border-color: aliceblue; 
+    }
+    ul{
+        border-color: aliceblue;
+        background-color: aliceblue;
+        border-color: aliceblue;
+    }
+    
+    .s-sidebarwidget__yellow .s-sidebarwidget--header, .s-sidebarwidget__yellow .s-sidebarwidget--content {
+        border-color: aliceblue;
+        background-color: aliceblue;
+    }
+}
