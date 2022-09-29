@@ -14,8 +14,8 @@ export const SideBarData = [
     link: '/channels',
     text: 'Slack Channels',
   },
-  // {
-  //   link: '/jobs',
-  //   text: 'Favorites',
-  // }
+  {
+    link: '/categories',
+    text: 'Categories',
+  }
 ]

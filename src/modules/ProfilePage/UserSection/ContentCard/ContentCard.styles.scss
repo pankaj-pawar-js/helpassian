@@ -4,12 +4,10 @@
   flex: 1 auto !important;
 
   .content-grid {
-    margin: -8px;
     display: flex;
     flex-direction: column;
 
     .info-cell {
-      margin: 8px;
       //height: 278px;
       padding-right: 16px !important;
       flex: 1 auto;
@@ -25,7 +23,7 @@
 
           h2 {
             word-break: break-all !important;
-            color: #242729;
+            color: #2584ff !important;
             font-size: 27px;
             display: flex;
             align-items: center;
@@ -34,8 +32,6 @@
         }
 
         .date {
-          margin-top: 16px;
-          margin-bottom: 4px;
           color: #acb2b8 !important;
           font-size: 15px;
         }
@@ -43,8 +39,8 @@
     }
 
     .stats-cell {
-      margin: 8px;
       padding-right: 24px !important;
+      width:40%;
 
       .count-sec {
         color: #3c4146 !important;
@@ -56,6 +52,10 @@
 
           .cells {
             margin: 6px;
+            flex: 1;
+            border: 1px;
+            border-radius: 3px;
+            padding: 5px;
 
             .column-grid {
               display: flex;
@@ -68,6 +68,7 @@
               }
               .foot {
                 font-size: 13px;
+                text-align: center;
               }
             }
           }

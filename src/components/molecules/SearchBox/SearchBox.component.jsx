@@ -14,7 +14,7 @@ const SearchBox = ({
   return (
     <Fragment>
       <form
-        id='search'
+        bhaga='true'
         onSubmit={handleSubmit}
         className={`grid--cell fl-grow1 searchbar ${pt} ${px} js-searchbar`}
         autoComplete='off'

@@ -25,6 +25,7 @@ const QuestionsPage = ({getPosts, post: {posts, loading}}) => {
   const [sortType, setSortType] = useState('Newest');
 
   let searchQuery = new URLSearchParams(useLocation().search).get('search');
+  let userQuery = new URLSearchParams(useLocation().search).get('user')
 
   const handlePaginationChange = (e, value) => setPage(value);
 
@@ -36,6 +37,7 @@ const QuestionsPage = ({getPosts, post: {posts, loading}}) => {
         <div className='questions-grid'>
           <h3 className='questions-headline'>
             {searchQuery ? 'Search Results' : 'All Questions'}
+            {userQuery ? 'User Results' : 'All Questions'}
           </h3>
           <div className='questions-btn'>
             <LinkButton
@@ -55,6 +57,16 @@ const QuestionsPage = ({getPosts, post: {posts, loading}}) => {
         ) : (
           ''
         )}
+        {userQuery ? (
+          <div className='search-questions'>
+            <span style={{color: '#acb2b8', fontSize: '12px'}}>
+              Results for the user {userQuery}
+            </span>
+            <SearchBox placeholder={'Search...'} name={'search'} pt={'mt8'} />
+          </div>
+        ) : (
+          ''
+        )}
         <div className='questions-tabs'>
           <span>
             {new Intl.NumberFormat('en-IN').format(posts.length)} questions
@@ -68,6 +80,7 @@ const QuestionsPage = ({getPosts, post: {posts, loading}}) => {
         <div className='questions'>
           {posts
             .filter((post) => post.title.toLowerCase().includes(searchQuery ? searchQuery : ''))
+            .filter((post) => post.user_id.includes(userQuery ? userQuery : ''))
             ?.sort(handleSorting(sortType))
             .slice((page - 1) * itemsPerPage, (page - 1) * itemsPerPage + itemsPerPage)
             .map((post, index) => (
@@ -76,7 +89,8 @@ const QuestionsPage = ({getPosts, post: {posts, loading}}) => {
         </div>
         <Pagination
           page={page}
-          itemList={posts.filter((post) => post.title.toLowerCase().includes(searchQuery ? searchQuery : ''))}
+          itemList={posts.filter((post) => post.title.toLowerCase().includes(searchQuery ? searchQuery : '')).
+                          filter((post) => post.user_id.includes(userQuery ? userQuery : ''))}
           itemsPerPage={itemsPerPage}
           handlePaginationChange={handlePaginationChange}
         />
