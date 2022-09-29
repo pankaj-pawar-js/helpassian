@@ -2,7 +2,7 @@ import React from "react";
 import {Link} from "react-router-dom";
 
 import {ReactComponent as StackExchangeLogo} from "../../../assets/StackExchange.svg";
-import {ReactComponent as Logo} from "../../../assets/LogoGlyphMd.svg";
+import {ReactComponent as Logo} from "../../../assets/small-atlassian-logo.svg";
 
 import './ExternalUserDetails.styles.scss';
 
@@ -25,7 +25,7 @@ const ExternalUserDetails = () => (
                 <Logo className='logo' />
               </span>
               <span className='fc-blue-600 fs-body2'>
-                Stack Overflow
+                HelpAssian
               </span>
             </Link>
           </li>

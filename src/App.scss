@@ -82,6 +82,14 @@ button {
         border-top: 2px solid #EBECF0;
         margin: 12px 0px 12px 24px;
     }
+
+    .user-card{
+        .s-navigation .s-navigation--item.is-selected{
+            background-color: #0c66e4;
+            color: white;
+            border: 1px solid #0c66e4;
+        }
+    }
 }
 
 body .side-bar-container {

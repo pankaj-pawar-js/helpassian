@@ -70,7 +70,7 @@ const MobileSideBar = (props) => {
 							>
 								<p>
 									<GlobalIcon className="icon" />
-									Stack Overflow
+									HelpAssian
 								</p>
 							</NavLink>
 							<NavLink

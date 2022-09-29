@@ -12,7 +12,7 @@ const Caption = () => {
   return (
     <Fragment>
       <div className='caption fc-black-600'>
-        <h3>Join the Stack Overflow community</h3>
+        <h3>Join the HelpAssian community</h3>
         <div className='caption-item'>
           <div className='grid-icon'>
             <QuoteLogo/>
