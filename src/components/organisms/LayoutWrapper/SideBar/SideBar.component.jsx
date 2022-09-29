@@ -22,7 +22,7 @@ const SideBar = () => (
         ))}
       </div>
       <div className='teams-tabs'>
-        <p className='title fc-light'>TEAMS</p>
+        <p className='title fc-light'>SPACE</p>
       </div>
     </div>
   </div>

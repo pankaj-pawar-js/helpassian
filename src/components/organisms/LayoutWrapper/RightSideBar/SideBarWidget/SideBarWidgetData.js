@@ -38,13 +38,13 @@ export const SideBarWidgetData = [
   {
     type: 'item',
     title: 'Announcing an A/B test for a Trending sort option',
-    icon: <div className="favicon favicon-stackoverflowmeta" title="Meta Stack Overflow"/>,
+    icon: <div className="favicon favicon-stackexchangemeta" title="Meta Stack Overflow"/>,
     link: 'https://meta.stackoverflow.com/questions/416486/announcing-an-a-b-test-for-a-trending-sort-option'
   },
   {
     type: 'item',
     title: 'New User Experience: Deep Dive into our Research on the Staging Ground – How...',
-    icon: <div className="favicon favicon-stackoverflowmeta" title="Meta Stack Overflow"/>,
+    icon: <div className="favicon favicon-stackexchangemeta" title="Meta Stack Overflow"/>,
     link: 'https://meta.stackoverflow.com/questions/416652/new-user-experience-deep-dive-into-our-research-on-the-staging-ground-how-do'
   },
   {

@@ -12,7 +12,7 @@
 }
 
 body {
-    background-color: #2d2d2d !important;
+    background-color: #F4F5F7 !important;
     padding-top: 0 !important;
 }
 
@@ -49,7 +49,7 @@ button {
         box-sizing: border-box;
         display: flex;
         border: 1px solid #dce1e9;
-        margin: 12px;
+        margin: 12px 0;
         border-radius: 4px;
         background-color: #F4F5F7;
     }
@@ -63,6 +63,24 @@ button {
         color: #0c66e4;
         background-color: aliceblue;
         border-color: #0c66e4;
+    }
+
+    .questions {
+        .posts {
+            .stats-container {
+                width: 100px;
+            }
+            .vote {
+                padding: 5px;
+                border: 1px solid;
+                border-radius: 25px;
+            }
+        }
+    }
+
+    .homepage .questions {
+        border-top: 2px solid #EBECF0;
+        margin: 12px 0px 12px 24px;
     }
 }
 

@@ -11,23 +11,39 @@ const Footer = () => {
       <div className="socials">
         <div className="social-item">
           <a
-            href='https://github.com/Mayank0255/Stackoverflow-Clone-Frontend'
+            href='/'
             target='_blank'
             rel="noreferrer"
           >
-            <GitHub/>
+            © 2022 Atlassian
           </a>
-          <p><strong>Frontend</strong></p>
         </div>
         <div className="social-item">
           <a
-            href='https://github.com/Mayank0255/Stackoverflow-Clone-Backend'
+            href='/'
             target='_blank'
             rel="noreferrer"
           >
-            <Database/>
+           Trademark
           </a>
-          <p><strong>Backend</strong></p>
+        </div>
+        <div className="social-item">
+          <a
+            href='/'
+            target='_blank'
+            rel="noreferrer"
+          >
+           Privacy
+          </a>
+        </div>
+        <div className="social-item">
+          <a
+            href='/'
+            target='_blank'
+            rel="noreferrer"
+          >
+           License
+          </a>
         </div>
       </div>
     </div>

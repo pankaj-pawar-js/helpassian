@@ -56,7 +56,9 @@ const PostItem = ({
             <div className="count-text">tags</div>
           </div>
           <div className="vote">
-            <div className="count-text">{views} views</div>
+            <span className="vote-count"><b>{views}</b></span>
+            <div className="count-text">views</div>
+            {/* <div className="count-text">{`${views} views`}</div> */}
           </div>
         </div>
       </div>
